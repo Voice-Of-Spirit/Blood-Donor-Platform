@@ -195,6 +195,12 @@ ngrok http 5000
 
 </div>
 
-Built and maintained by **Bharath**  
-Inspired by real-world emergency coordination challenges.
+---
+
+<div align="center">
+
+![Animated Footer](animated_footer.svg)
+
+</div>
+
  
