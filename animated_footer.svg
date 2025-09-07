@@ -1,0 +1,99 @@
+<svg fill="none" width="800" height="100" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+                /* Keyframes from Option 1 */
+                @keyframes type-main {
+                    from { width: 0; }
+                    to { width: 28ch; } /* Characters in "Built and maintained by " */
+                }
+                @keyframes type-name {
+                    from { width: 0; }
+                    to { width: 8ch; }  /* Characters in "Bharath " */
+                }
+                @keyframes blink-caret {
+                    from, to { border-color: transparent; }
+                    50% { border-color: #00BFFF; }
+                }
+
+                /* Keyframes from Option 2 */
+                @keyframes sweep {
+                    from { width: 0%; }
+                    to { width: 100%; }
+                }
+                @keyframes fade-in {
+                    from { opacity: 0; }
+                    to { opacity: 1; }
+                }
+
+                /* General Styles */
+                .container {
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+                    color: #e5e7eb; /* Light gray text */
+                    font-size: 18px;
+                    line-height: 1.6;
+                }
+
+                /* Line 1: Typing animation */
+                .line1 {
+                    display: inline-block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    border-right: .15em solid #00BFFF;
+                    animation:
+                        type-main 2s steps(28, end),
+                        blink-caret .75s step-end 3;
+                    animation-fill-mode: forwards;
+                }
+                
+                .name {
+                    display: inline-block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    font-weight: bold;
+                    color: #10B981; /* Emerald green for the name */
+                    border-right: .15em solid #00BFFF;
+                    animation:
+                        type-name 1s steps(8, end) 2.5s, /* Starts after line1 finishes */
+                        blink-caret .75s step-end infinite 2.5s;
+                    animation-fill-mode: forwards;
+                }
+
+                /* Line 2: Underline sweep animation */
+                .line2-wrapper {
+                    display: inline-block;
+                    position: relative;
+                    opacity: 0; /* Start hidden */
+                    animation: fade-in 1s ease-out 4s; /* Starts after name is typed */
+                    animation-fill-mode: forwards;
+                }
+                .line2-text {
+                    font-style: italic;
+                    color: #9ca3af; /* Muted gray for the second line */
+                }
+                .line2-wrapper::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -4px;
+                    left: 0;
+                    height: 2px;
+                    background-color: #00BFFF; /* Deep sky blue underline */
+                    width: 0; /* Start with no width */
+                    animation: sweep 1.2s ease-out 4s; /* Sync with fade-in */
+                    animation-fill-mode: forwards;
+                }
+
+            </style>
+            <div class="container">
+                <!-- Line 1 with typing name -->
+                <div>
+                    <span class="line1">Built and maintained by </span><span class="name">Bharath</span>
+                </div>
+                <!-- Line 2 with sweep animation -->
+                <div class="line2-wrapper">
+                    <span class="line2-text">Inspired by real-world emergency coordination challenges</span>
+                </div>
+            </div>
+        </div>
+    </foreignObject>
+</svg>
