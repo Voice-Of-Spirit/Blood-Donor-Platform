@@ -4,9 +4,24 @@
 
 </div>
 
+---
+
 <div align="center">
 
 **Blood Donor Platform based on student database**
+
+</div>
+<div align="center">
+
+## Made By
+
+</div>
+
+---
+
+<div align="left">
+
+![Animated Footer](animated_footer.svg)
 
 </div>
 
@@ -24,6 +39,18 @@ This platform solves a critical coordination problem in emergency healthcare:
 - The system matches requests with eligible donors from a MySQL database.
 - Twilio voice calls verify which donors are immediately available.
 - Hospitals receive a refined list of confirmed donors—ready to act.
+
+---
+
+<div align="center">
+
+## 🌐 GitHub Pages Demo
+</div>
+
+You can view the Blood Donor Request Status demo page here:
+🔗 Live Demo on GitHub Pages
+
+Note: This is a standalone webpage from the full Blood Donor Platform, deployed for demonstration purposes.
 
 ---
 
@@ -189,18 +216,6 @@ ngrok http 5000
 
 ---
 
-<div align="center">
 
-## 🤝 Contributors
-
-</div>
-
----
-
-<div align="center">
-
-![Animated Footer](animated_footer.svg)
-
-</div>
 
  
