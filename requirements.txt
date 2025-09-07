@@ -1,0 +1,6 @@
+Flask 
+SQLAlchemy 
+python-dotenv 
+pymysql 
+pandas 
+twilio 
