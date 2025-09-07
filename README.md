@@ -45,12 +45,13 @@ This platform solves a critical coordination problem in emergency healthcare:
 <div align="center">
 
 ## 🌐 GitHub Pages Demo
+
 </div>
 
-You can view the Blood Donor Request Status demo page here:
-🔗 Live Demo on GitHub Pages
+You can view the **Blood Donor Request Status demo page** here:  
+🔗 [Live Demo on GitHub Pages](https://voice-of-spirit.github.io/Blood-Donor-Platform/)
 
-Note: This is a standalone webpage from the full Blood Donor Platform, deployed for demonstration purposes.
+> _Note: This is a standalone webpage from the full Blood Donor Platform, deployed for demonstration purposes._
 
 ---
 
