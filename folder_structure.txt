@@ -1,0 +1,15 @@
+Project Folder Structure:
+
+Blood-Donor-Platform/
+|-- LICENSE
+|-- Procfile
+|-- README.md
+|-- app.py
+|-- config.py
+|-- folder_structure.txt
+|-- import_data.py
+|-- runtime.txt
+|-- templates/
+|   |-- index.html
+|   |-- results.html
+|-- tree_view.py
